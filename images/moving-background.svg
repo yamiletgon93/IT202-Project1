@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000">
+  <rect width="1440" height="1000" fill="#f4f1e8"/>
+  <circle cx="290" cy="700" r="275" fill="#e5e9db"/>
+  <path d="M0 800 Q210 745 460 802 T980 799 T1440 782 V1000 H0Z" fill="#d8e0ce"/>
+  <path d="M0 895 Q320 831 660 883 T1440 871 V1000 H0Z" fill="#c3d0bc"/>
+  <g fill="#e6dcca" stroke="#cbbfa8" stroke-width="3">
+    <path d="M55 665 133 594 212 665V809H55Z"/>
+    <path d="M349 615 450 538 551 615V794H349Z"/>
+  </g>
+  <g fill="#f9f5e9" stroke="#cbbfa8" stroke-width="3">
+    <path d="M77 696h37v42H77zM148 696h37v42h-37zM376 646h45v45h-45zM477 646h45v45h-45z"/>
+    <path d="M431 720h40v74h-40z" fill="#bdc7af"/>
+  </g>
+  <g stroke="#9faf98" stroke-width="8" stroke-linecap="round">
+    <path d="M27 838V717M593 822V681"/>
+  </g>
+  <g fill="#abbca0">
+    <ellipse cx="27" cy="687" rx="45" ry="65"/>
+    <ellipse cx="593" cy="652" rx="48" ry="76"/>
+  </g>
+  <ellipse cx="315" cy="885" rx="272" ry="19" fill="#78917a" opacity=".24"/>
+  <g stroke="#244d3c" stroke-width="4" stroke-linejoin="round">
+    <rect x="94" y="727" width="280" height="128" rx="8" fill="#fffdf5"/>
+    <path d="M374 768h82l55 60v27H374Z" fill="#285443"/>
+    <path d="M388 780h58l36 41h-94Z" fill="#d2e1d9"/>
+    <path d="M78 848h442v20H78Z" fill="#285443"/>
+    <circle cx="153" cy="864" r="28" fill="#244d3c"/>
+    <circle cx="447" cy="864" r="28" fill="#244d3c"/>
+    <circle cx="153" cy="864" r="12" fill="#e8e8dc"/>
+    <circle cx="447" cy="864" r="12" fill="#e8e8dc"/>
+  </g>
+  <text x="122" y="787" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#244d3c">MOVING ON UP</text>
+  <text x="124" y="813" font-family="Arial, sans-serif" font-size="12" letter-spacing="2" fill="#52665c">YOUR NEXT CHAPTER</text>
+  <g fill="#dbb576" stroke="#af8b54" stroke-width="2">
+    <path d="M538 833h47v47h-47zM587 851h40v29h-40zM543 803h37v30h-37z"/>
+  </g>
+  <g stroke="#af8b54" stroke-width="3"><path d="M561 833v18M607 851v12M561 803v12"/></g>
+</svg>
