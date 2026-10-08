@@ -1,0 +1,152 @@
+/* Phase 1: plain CSS, with no frameworks. */
+:root {
+  --forest: #183e32;
+  --green: #285443;
+  --cream: #f4f1e8;
+  --muted: #52665c;
+  --border: #cad5cd;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--forest);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cream);
+  background-image: url("images/moving-background.svg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.site-header {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--forest);
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.brand-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--forest);
+  color: white;
+  font-size: 26px;
+}
+
+.brand-mark span { color: #dfb875; font-size: 23px; }
+.brand small { display: block; margin-top: 6px; font-size: 9px; letter-spacing: 1.5px; }
+.header-note { font-size: 12px; border: 1px solid #aabbb0; border-radius: 20px; padding: 9px 15px; }
+
+.portal {
+  max-width: 1184px;
+  margin: 20px auto 42px;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr 1.18fr;
+  align-items: start;
+  gap: 64px;
+}
+
+.introduction { padding-top: 62px; }
+.eyebrow { font-size: 10px; font-weight: bold; letter-spacing: 1.8px; margin: 0 0 20px; }
+h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(42px, 4.7vw, 64px); font-weight: normal; line-height: 1.08; letter-spacing: -2px; margin: 0 0 24px; }
+.intro-copy { max-width: 335px; font-size: 15px; line-height: 1.8; color: var(--muted); }
+.intro-tag { margin-top: 26px; font-size: 11px; font-weight: bold; }
+
+.login-card {
+  background: #fffdf8;
+  border: 1px solid #d4d9cf;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 18px 48px rgb(24 62 50 / 9%);
+}
+
+.login-card .eyebrow { color: var(--muted); margin-bottom: 12px; font-size: 9px; }
+h2 { font-size: 25px; line-height: 1.25; letter-spacing: -0.5px; margin: 0 0 9px; }
+.form-intro { font-size: 12px; line-height: 1.6; color: var(--muted); margin: 0 0 26px; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { margin-bottom: 18px; min-width: 0; }
+.field label { display: block; font-size: 11px; font-weight: bold; margin-bottom: 8px; }
+.label-note { font-weight: normal; color: var(--muted); margin-left: 4px; }
+
+input[type="text"], input[type="password"], select {
+  width: 100%;
+  min-width: 0;
+  height: 43px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 0 12px;
+  color: var(--forest);
+  background: #fff;
+  font: 12px Arial, Helvetica, sans-serif;
+}
+
+input::placeholder { color: #6b7c72; opacity: 1; }
+select { font-size: 11px; padding-right: 8px; }
+input:focus-visible, select:focus-visible, a:focus-visible { outline: 3px solid #ad8043; outline-offset: 3px; }
+.field-help { margin: 7px 0 0; font-size: 10px; line-height: 1.5; color: var(--muted); }
+.confirmation { display: flex; align-items: center; gap: 9px; margin: 0 0 23px; }
+.confirmation input { width: 16px; height: 16px; margin: 0; accent-color: var(--green); flex-shrink: 0; }
+.confirmation label { font-size: 11px; line-height: 1.5; cursor: pointer; }
+.transaction-field { margin-bottom: 22px; }
+.form-actions { display: flex; gap: 12px; }
+.form-actions input { height: 44px; padding: 0 24px; border-radius: 7px; font: bold 12px Arial, Helvetica, sans-serif; cursor: pointer; }
+input[type="submit"] { flex: 1; background: var(--forest); border: 1px solid var(--forest); color: white; }
+input[type="submit"]:hover { background: #2b5846; }
+input[type="reset"] { background: transparent; border: 1px solid var(--border); color: var(--forest); }
+input[type="reset"]:hover { background: #ebefe6; }
+.site-footer { text-align: center; padding: 0 24px 22px; font-size: 10px; color: var(--forest); }
+.site-footer span { margin: 0 8px; }
+
+@media (min-width: 1500px) {
+  .portal { margin-top: 48px; }
+}
+
+@media (max-width: 900px) {
+  .site-header { padding: 24px; }
+  .portal { padding: 0 24px; gap: 28px; grid-template-columns: 0.85fr 1.15fr; }
+  .login-card { padding: 25px; }
+  .introduction { padding-top: 42px; }
+}
+
+@media (max-width: 700px) {
+  body { background-attachment: scroll; }
+  .site-header { padding: 22px 20px; }
+  .header-note { display: none; }
+  .portal { grid-template-columns: 1fr; gap: 22px; margin: 10px auto 26px; padding: 0 20px; max-width: 520px; }
+  .introduction { padding-top: 6px; }
+  .introduction .eyebrow { margin-bottom: 12px; }
+  h1 { font-size: 43px; letter-spacing: -1.2px; margin-bottom: 14px; }
+  .intro-copy { max-width: none; font-size: 13px; line-height: 1.7; margin: 0; }
+  .intro-tag { display: none; }
+  .login-card { padding: 25px 20px; border-radius: 15px; }
+  h2 { font-size: 23px; }
+}
+
+@media (max-width: 380px) {
+  .field-row { grid-template-columns: 1fr; gap: 0; }
+  .portal { padding: 0 12px; }
+  .login-card { padding: 24px 16px; }
+  select { font-size: 10px; }
+}
