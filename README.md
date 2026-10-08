@@ -7,8 +7,9 @@ A representative login interface for the fictional moving company Moving On Up, 
 ### Files
 
 - `index.html` - login form and page content.
-- `styles.css` - page layout, form styling, keyboard focus styles, and mobile layouts.
-- `images/moving-background.svg` - original moving van illustration used as the page background.
+- `styles.css` - centered translucent form, blue labels, green border, keyboard focus styles, and mobile layouts.
+- `images/MovingPhoto.avif` - selected moving image used as the page background.
+- `images/moving-background.svg` - original illustration retained as an optional alternative background.
 
 ### Open the page
 

@@ -7,69 +7,59 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Moving On Up home">
-      <span class="brand-mark" aria-hidden="true">M<span>↑</span></span>
-      <span>Moving On Up<small>LOCAL MOVES. NEW BEGINNINGS.</small></span>
-    </a>
-    <span class="header-note">Representative portal</span>
-  </header>
-
-  <main class="portal">
-    <section class="introduction" aria-labelledby="intro-title">
-      <p class="eyebrow">LET'S GET MOVING</p>
-      <h1 id="intro-title">A smooth move<br>starts here.</h1>
-      <p class="intro-copy">Every new beginning deserves a helping hand. Access your client accounts and manage their next move, all in one place.</p>
-      <p class="intro-tag">Care in every box. Confidence in every move.</p>
-    </section>
-
-    <section class="login-card" aria-labelledby="login-title">
-      <p class="eyebrow">MOVING ON UP / TEAM ACCESS</p>
-      <h2 id="login-title">Representative login</h2>
-      <p class="form-intro">Enter your details and choose a transaction.</p>
-
-      <!-- Phase 1 provides the interface. Phase 2 will handle submission in JavaScript. -->
-      <form id="representative-form" action="#" method="post" autocomplete="off">
-        <div class="field-row">
-          <div class="field">
-            <label for="first-name">First name</label>
-            <input type="text" id="first-name" name="firstName" placeholder="First name">
-          </div>
-          <div class="field">
-            <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="lastName" placeholder="Last name">
-          </div>
+  <main class="login-panel">
+    <h1>Moving On Up</h1>
+    <!-- Phase 1 is the interface. Phase 2 will validate and verify submissions. -->
+    <form id="representative-form" action="#" method="post" autocomplete="off">
+      <div class="field">
+        <label for="first-name">Moving Rep's First Name:</label>
+        <div class="input-row">
+          <input type="text" id="first-name" name="firstName" placeholder="First name" aria-describedby="first-name-note">
+          <span class="field-note" id="first-name-note">REQUIRED</span>
         </div>
-
-        <div class="field-row">
-          <div class="field">
-            <label for="representative-id">Representative ID</label>
-            <input type="text" id="representative-id" name="representativeId" placeholder="4-digit ID">
-          </div>
-          <div class="field">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Your password">
-          </div>
+      </div>
+      <div class="field">
+        <label for="last-name">Moving Rep's Last Name:</label>
+        <div class="input-row">
+          <input type="text" id="last-name" name="lastName" placeholder="Last name" aria-describedby="last-name-note">
+          <span class="field-note" id="last-name-note">REQUIRED</span>
         </div>
-
-        <div class="field">
-          <label for="phone">Phone number with extension</label>
-          <input type="text" id="phone" name="phone" placeholder="201-555-0123 ext. 101">
+      </div>
+      <div class="field">
+        <label for="password">Moving Rep's Password:</label>
+        <div class="input-row">
+          <input type="password" id="password" name="password" placeholder="Password" aria-describedby="password-note">
+          <span class="field-note" id="password-note">REQUIRED</span>
         </div>
-
-        <div class="field">
-          <label for="email">Email address <span class="label-note">for confirmations</span></label>
-          <input type="text" id="email" name="email" placeholder="name@example.com" aria-describedby="email-help">
-          <p class="field-help" id="email-help">Needed only when email confirmation is requested.</p>
+      </div>
+      <div class="field">
+        <label for="representative-id">Moving Rep's ID #:</label>
+        <div class="input-row">
+          <input type="text" id="representative-id" name="representativeId" placeholder="4-digit ID" aria-describedby="id-note">
+          <span class="field-note" id="id-note">REQUIRED</span>
         </div>
-
-        <div class="confirmation">
-          <input type="checkbox" id="email-confirmation" name="emailConfirmation" value="yes">
-          <label for="email-confirmation">Request email confirmation for the client</label>
+      </div>
+      <div class="field">
+        <label for="phone">Moving Rep's Phone #:</label>
+        <div class="input-row">
+          <input type="text" id="phone" name="phone" placeholder="201-555-0123 ext. 101" aria-describedby="phone-note">
+          <span class="field-note" id="phone-note">REQUIRED</span>
         </div>
-
-        <div class="field transaction-field">
-          <label for="transaction">Choose a transaction</label>
+      </div>
+      <div class="field">
+        <label for="email">Moving Rep's Email:</label>
+        <div class="input-row">
+          <input type="text" id="email" name="email" placeholder="name@example.com" aria-describedby="email-note">
+          <span class="field-note email-note" id="email-note">IF REQUESTED</span>
+        </div>
+      </div>
+      <div class="confirmation">
+        <input type="checkbox" id="email-confirmation" name="emailConfirmation" value="yes">
+        <label for="email-confirmation">Check the box to request an Email Confirmation:</label>
+      </div>
+      <div class="bottom-row">
+        <div class="transaction-field">
+          <label for="transaction">Select a Transaction:</label>
           <select id="transaction" name="transaction">
             <option value="search">Search A Moving Representative's Accounts</option>
             <option value="book">Book a Client's Moving Event</option>
@@ -79,15 +69,12 @@
             <option value="new-client">Create A New Client Account</option>
           </select>
         </div>
-
         <div class="form-actions">
           <input type="submit" id="submit-button" name="submitButton" value="Submit">
           <input type="reset" id="reset-button" name="resetButton" value="Reset">
         </div>
-      </form>
-    </section>
+      </div>
+    </form>
   </main>
-
-  <footer class="site-footer">Moving On Up <span aria-hidden="true">·</span> Your neighborhood moving team</footer>
 </body>
 </html>
