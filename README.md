@@ -34,6 +34,14 @@ Use fictional details when previewing this class exercise. It is not a productio
 
 ### Submission
 
-Upload `index.html`, `styles.css`, and the `images` folder to your NJIT web directory, keeping the same relative paths. The webpage URL will follow `https://web.njit.edu/~YOUR_UCID/index.html` if uploaded to the root of your web directory. Replace `YOUR_UCID` with your actual UCID, and adjust the path if using a project subfolder.
+Your NJIT UCID is `yg432` (the part before `@njit.edu`). Upload `index.html`, `styles.css`, and the `images` folder to your NJIT web directory, keeping the same relative paths.
+
+If uploaded to the root of your web directory, the webpage address is:
+
+https://web.njit.edu/~yg432/index.html
+
+The stylesheet address is https://web.njit.edu/~yg432/styles.css and the active background image address is https://web.njit.edu/~yg432/images/MovingPhoto.avif. Adjust these paths if using a project subfolder. The HTML and CSS already use relative file paths, so no UCID change is needed inside them.
+
+These addresses become available after uploading to NJIT; a GitHub commit does not upload the site to NJIT automatically.
 
 Submit the files, the required file URLs, and this repository URL in Canvas as directed by the assignment.
