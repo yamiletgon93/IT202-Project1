@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving On Up | Representative Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Moving On Up home">
+      <span class="brand-mark" aria-hidden="true">M<span>↑</span></span>
+      <span>Moving On Up<small>LOCAL MOVES. NEW BEGINNINGS.</small></span>
+    </a>
+    <span class="header-note">Representative portal</span>
+  </header>
+
+  <main class="portal">
+    <section class="introduction" aria-labelledby="intro-title">
+      <p class="eyebrow">LET'S GET MOVING</p>
+      <h1 id="intro-title">A smooth move<br>starts here.</h1>
+      <p class="intro-copy">Every new beginning deserves a helping hand. Access your client accounts and manage their next move, all in one place.</p>
+      <p class="intro-tag">Care in every box. Confidence in every move.</p>
+    </section>
+
+    <section class="login-card" aria-labelledby="login-title">
+      <p class="eyebrow">MOVING ON UP / TEAM ACCESS</p>
+      <h2 id="login-title">Representative login</h2>
+      <p class="form-intro">Enter your details and choose a transaction.</p>
+
+      <!-- Phase 1 provides the interface. Phase 2 will handle submission in JavaScript. -->
+      <form id="representative-form" action="#" method="post" autocomplete="off">
+        <div class="field-row">
+          <div class="field">
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="firstName" placeholder="First name">
+          </div>
+          <div class="field">
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="lastName" placeholder="Last name">
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="representative-id">Representative ID</label>
+            <input type="text" id="representative-id" name="representativeId" placeholder="4-digit ID">
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Your password">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone number with extension</label>
+          <input type="text" id="phone" name="phone" placeholder="201-555-0123 ext. 101">
+        </div>
+
+        <div class="field">
+          <label for="email">Email address <span class="label-note">for confirmations</span></label>
+          <input type="text" id="email" name="email" placeholder="name@example.com" aria-describedby="email-help">
+          <p class="field-help" id="email-help">Needed only when email confirmation is requested.</p>
+        </div>
+
+        <div class="confirmation">
+          <input type="checkbox" id="email-confirmation" name="emailConfirmation" value="yes">
+          <label for="email-confirmation">Request email confirmation for the client</label>
+        </div>
+
+        <div class="field transaction-field">
+          <label for="transaction">Choose a transaction</label>
+          <select id="transaction" name="transaction">
+            <option value="search">Search A Moving Representative's Accounts</option>
+            <option value="book">Book a Client's Moving Event</option>
+            <option value="cancel">Cancel A Client's Moving Event</option>
+            <option value="services">Request Moving Services</option>
+            <option value="additional-services">Request Additional Moving Services</option>
+            <option value="new-client">Create A New Client Account</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+          <input type="submit" id="submit-button" name="submitButton" value="Submit">
+          <input type="reset" id="reset-button" name="resetButton" value="Reset">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">Moving On Up <span aria-hidden="true">·</span> Your neighborhood moving team</footer>
+</body>
+</html>
