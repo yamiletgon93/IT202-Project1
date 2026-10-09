@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moving On Up | Representative Login</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <main class="login-panel">
     <h1>Moving On Up</h1>
-    <!-- Phase 1 is the interface. Phase 2 will validate and verify submissions. -->
+    <!-- JavaScript handles validation and verification without sending form data. -->
     <form id="representative-form" action="#" method="post" autocomplete="off">
       <div class="field">
         <label for="first-name">Moving Rep's First Name:</label>
@@ -28,7 +29,12 @@
       <div class="field">
         <label for="password">Moving Rep's Password:</label>
         <div class="input-row">
-          <input type="password" id="password" name="password" placeholder="Password" aria-describedby="password-note">
+          <div class="password-control">
+            <input type="password" id="password" name="password" placeholder="Password" aria-describedby="password-note">
+            <button type="button" id="password-toggle" name="passwordToggle" aria-label="Show password" aria-pressed="false">
+              <svg class="eye-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/><path class="eye-slash" d="m3 3 18 18"/></svg>
+            </button>
+          </div>
           <span class="field-note" id="password-note">REQUIRED</span>
         </div>
       </div>
